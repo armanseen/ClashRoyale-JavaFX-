@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<GridPane fx:controller="sample.MainPage" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <style>
+        -fx-background-color: linear-gradient(to top,#FFFFFF,#6DD5FA,#2980B9);;
+    </style>
+
+
+
+    <Text GridPane.columnSpan="3" text="Main Page" GridPane.halignment="CENTER">
+        <GridPane.margin>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="-50.0" />
+        </GridPane.margin>
+        <font>
+            <Font size="16.0" />
+        </font>
+    </Text>
+
+    <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <Button text="Profile" onAction="#Profile"/>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <Button text="Battle Deck" onAction="#Battle_Deck"/>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <Button text="Battle History" onAction="#Battle_History"/>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+        <Button text="Training Camp" onAction="#Training_Camp"/>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <Button text="1v1" onAction="#OneVOne"/>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+        <Button text="2v2" onAction="#TwoVTwo"/>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER" GridPane.columnSpan="3" GridPane.rowIndex="5">
+        <Button text="Exit" onAction="#Exit"/>
+    </HBox>
+</GridPane>
